@@ -21,23 +21,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         
         
-        models.append(Model(text: "Watch Digital Models", imageName:
-            "img_1"))
+        models.append(Model(text: "iPhone Model 1012", imageName:
+            "iphone_1"))
         
-        models.append(Model(text: "WG Deport", imageName:
-            "img_2"))
+        models.append(Model(text: "iPhone Deport 1013", imageName:
+            "iphone_2"))
         
-        models.append(Model(text: "WG Run", imageName:
-            "img_3"))
+        models.append(Model(text: "iPhone Run 1014", imageName:
+            "iphone_3"))
         
-        models.append(Model(text: "WG Sleep", imageName:
-            "img_4"))
+        models.append(Model(text: "iPhone Sleep 1015" , imageName:
+            "iphone_4"))
         
-        models.append(Model(text: "WG Move", imageName:
-            "img_5"))
+        models.append(Model(text: "iPhone Move 1016", imageName:
+            "iphone_5"))
         
-        models.append(Model(text: "WG Summer", imageName:
-            "img_6"))
+        models.append(Model(text: "iPhone Summer 1017", imageName:
+            "iphone_6"))
         
         
         
@@ -50,8 +50,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Table
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //models.count
-         return 1
+        models.count
+         //return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -79,4 +79,3 @@ struct Model {
         self.imageName = imageName
     }
 }
-
